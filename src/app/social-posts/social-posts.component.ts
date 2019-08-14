@@ -26,9 +26,9 @@ export class SocialPostsComponent implements OnInit {
     this.posts.splice(index, 1);
   }
 
-  onSubmit(newPost: object): void {
+  onSubmit(newPost) {
     console.log(newPost);
-    this.posts.unshift(newPost);
+    this.posts.unshift(newPost.value);
     this.toggleForm();
   }
 
