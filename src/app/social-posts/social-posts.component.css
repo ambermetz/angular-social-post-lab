@@ -1,0 +1,27 @@
+.main-content {
+  height: 90vh;
+  width: 50vw;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-family: "Homemade Apple", cursive;
+  color: rgb(3, 169, 244);
+}
+
+button {
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 7px 0px;
+}
+
+.posts {
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 20px;
+  margin-top: 20px;
+}

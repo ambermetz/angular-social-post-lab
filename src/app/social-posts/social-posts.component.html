@@ -1,0 +1,29 @@
+<link
+  href="https://fonts.googleapis.com/css?family=Homemade+Apple&display=swap"
+  rel="stylesheet"
+/>
+<main>
+  <div class="main-content">
+    <h1>My Thoughts</h1>
+    <section class="posts-area">
+      <button (click)="toggleForm()">New Thought</button>
+      <app-post-form
+        *ngIf="showPost"
+        (onAdd)="onSubmit($event)"
+      ></app-post-form>
+      <div class="posts">
+        <post
+          *ngFor="let post of posts; index as i"
+          [post]="post"
+          [postIndex]="i"
+          (onRemove)="onRemoveHandler($event)"
+        >
+        </post>
+      </div>
+    </section>
+  </div>
+</main>
+
+<!-- <post-form *ngIf="show" (submitted)="onSubmit($event)"> </post-form> -->
+
+<!-- <app-bookform *ngIf="showForm" (onAdd)="onAddHandler($event)"></app-bookform> -->
